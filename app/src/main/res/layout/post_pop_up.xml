@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="Create a post"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/text1"
+        android:src="@drawable/fine_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoToProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/account_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="61dp"
+        android:layout_toEndOf="@+id/btnGoToProfile"
+        android:text="user_1213"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCaption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGoToProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/null_bg"
+        android:hint="Give this story a title" />
+
+    <EditText
+        android:id="@+id/etContent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/null_bg"
+        android:hint="Tell us your story" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/etCaption1"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/fine_line" />
+
+
+</RelativeLayout>

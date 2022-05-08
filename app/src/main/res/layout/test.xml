@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/albgalbejit">
+
+    <TextView
+        android:layout_width="261dp"
+        android:layout_height="137dp"
+        android:fontFamily="@font/typo_round_regular_demo"
+        android:gravity="center"
+        android:text="An email has been sent to you"
+        android:textSize="30dp"
+        android:layout_marginLeft="65dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoToSignIn"
+        android:layout_width="104dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/button"
+        android:text="Go to sign in" />
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_puncte"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/appIcon"
+        android:layout_width="209dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/typo_round_regular_demo"
+        android:text="StopBully"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="A safe place to share \n your problems"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appIcon"
+        android:textColor="@color/lila"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToSignInBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Sign In"
+        android:background="@drawable/button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToRegisterBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goToSignInBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="825px"
+    android:layout_height="525px"
+    android:padding="16dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/rv_item"
+    android:layout_margin="2px"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/comment_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <Button
+        android:id="@+id/btnComments"
+        android:layout_width="38dp"
+        android:layout_height="28dp"
+
+        android:background="@drawable/null_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/tvPostAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/hourglass"
+        android:text="1 day ago"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:text="Tudor Ferercus"
+        android:textColor="#848484"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="161dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="4dp"
+        android:text="This is the caption!"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToProfile" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="7px"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et orci eu massa sollicitudin blandit sit amet vitae augue. Aliquam erat volutpat. Praesent hendrerit pharetra feugiat. Pellentesque ornare iaculis lacus, faucibus sollicitudin tellus semper id. Integer sodales tincidunt eros, vel dictum orci facilisis a. In non sollicitudin eros. Proin pellentesque libero id felis scelerisque, quis suscipit eros iaculis. Suspendisse potenti. Curabitur pellentesque tellus ac lacinia auctor. Suspendisse laoreet porta massa at vestibulum. Donec quis blandit orci. Vivamus nulla eros, mollis at tristique in, vestibulum ac orci. Aenean vitae luctus mauris. Praesent sit amet eros nec ante tempus malesuada. Donec eget placerat magna. Aliquam vel lobortis turpis."
+        android:textColor="#848484"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="75dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_posted"
+        android:text="Posted"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnGoToProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoToProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/account_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
